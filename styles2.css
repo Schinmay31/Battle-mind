@@ -1,0 +1,36 @@
+body{
+    background-color: whitesmoke;
+        }
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    
+    
+    }
+    #btn{
+        margin-left: 800px;
+        size: 10px;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid black;
+      text-align: center;
+      font-size: 30px;
+      height: 200px;
+     
+      
+    }
+    .grid-container{
+        margin-left: 200px;
+        margin-right: 200px;
+      margin-top: 200px;
+    }
+    img{
+        height: 100%;
+        width: 30%;
+    }
