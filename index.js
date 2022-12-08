@@ -1,10 +1,24 @@
-let correctPaths = ["img2","img5","img8","img9"];
-var idx = 0;
+let pathsOptions = [
+["img2","img7","img8","img13","img18","img19","img24","img25"],
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+["img5","img11","img12","img13","img18","img19","img20","img25"],
+];
+
+//  swal("Here's a message!", "It's pretty, isn't it?");
 let logicArray = [["img1","img2","img3"],["img4","img5","img6"],["img7","img8","img9"]];
 // let myCurrentPosition = [0,0];
 let myCurrimg = 1;
 // let optionsToGive = [];
 var gameStarted = false;
+var idx = 0;
 let idx1 = 0;
 let idx2 = 0;
 var option1 = "";
