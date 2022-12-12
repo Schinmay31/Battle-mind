@@ -1,57 +1,73 @@
 body{
-    background-color: #222629;
+  background-color: #222629;
 }
-        .grid-container{
-          display: grid;
-          grid-template-columns: 20% 20% 20% 20% 20%;
-          position: relative;
-          height: 450px;
-          width: 450px;
-          /* border: solid 1px black; */
-          /* max-width: 500px; */
-          margin: auto;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-           
-        }
-        h1{
-          
-          text-align: center;
-          padding-bottom: 40px;
-          color: whitesmoke;
-           font-weight: 900; 
-          
-        }
-        .btn{
-          cursor: pointer;
-          background-color: #61892F;
-          color: whitesmoke;
-          border-radius: 10px;
-          width: 107px;
-          height: 30px;
-          font-weight:800;
-        }
+      .grid-container{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        position: relative;
+        height: 28.75rem;
+        width: 28.75rem;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         
+      }
+      h1{
+        margin-top: 2 0px;
+        margin-bottom: unset;
+        font-size : 2.188rem;
+        text-align: center;
+        padding-bottom: 1.25rem;
+        color: whitesmoke;
+        font-weight: 900; 
         
-        .btn:hover{
+      }
+      .button{
+        text-align: center;
+      }
+      .btn{
+        cursor: pointer;
+        background-color: #61892F;
+        color: whitesmoke;
+        border-radius: 0.625rem;
+        width: 6.688rem;
+        height: 1.875rem;
+        font-weight:800;
+        margin-bottom: 1.25rem;
+        font-size: 0.75rem;
+        margin-left: 1.25rem;
+      }
+      
+      .btn:hover{
 
-          color: #222629;
-        }
-        img{
-           width: 16%;
-          position: absolute;
-        }
+        color: #222629;
+      }
         
-    
-        .box{
-          background-color: #61892F;
-          border: solid 1px black;
+      img{
+         width: 16%;
+        position: absolute;
+      }
+      
+  
+      .box{
+        background-color: #61892F;
+        border: solid 0.063rem black;
+        line-height: 0px;
+        padding: 0.625rem;
+         overflow: hidden;
+        margin: 0.031rem;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        font-size: 0.9rem;
+        color: white;
+        font-weight: bold;
         
-          padding: 10px;
-           overflow: hidden;
-          margin: 0.5px;
 
-          
-        }
         
-
-    
-    
+      }
+      .box:hover{
+        background-color: #79ab3c;
+      }
+      .box p{
+        color: wheat;
+      }
