@@ -61,16 +61,15 @@ body{
         font-size: 0.9rem;
         color: white;
         font-weight: bold;
-        
+     }
 
-        
-      }
       .box:hover{
         background-color: #79ab3c;
       }
       .box p{
         color: wheat;
       }
+
       .game-over {
         background-color: red;
         opacity: 3;
@@ -90,9 +89,14 @@ body{
         
         background-color: #61892F;
       }
+      .swal-text{
+        font-size: 20px;
+        color: whitesmoke;
+      }
       /* .swal-overlay {
         background-color: #222629;
       } */
-      /* .swal-button:hover{
-        background: #79ab3c;
-      } */
+        /* .swal-button:hover{
+         color: #79ab3c; 
+        background: #222629;
+      }   */

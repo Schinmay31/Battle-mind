@@ -1,15 +1,7 @@
 let correctPathsOptions =[ 
-  ["img2","img7","img8","img13","img14","img15","img19","img20"],
-["img2","img7","img12","img13","img18","img23","img24"],
-["img6","img7","img8","img13","img14","img19","img20"],
-["img6","img11","img16","img17","img22","img18","img23","img24"],
-["img2","img3","img4","img5","img9","img10","img14","img15","img19","img24"],
-["img2","img3","img8","img13","img14","img15","img19","img20"],
-["img6","img7","img12","img17","img18","img19","img24"],
-["img2","img3","img4","img9","img14","img19","img20"],
-["img6","img11","img12","img13","img14","img15","img20"],
-["img6","img11","img16","img21","img22","img23","img24"],
-["img2","img3","img4","img5","img10","img15","img20"]
+["img2","img7","img8","img13","img14","img15","img19","img20"],["img2","img7","img12","img13","img18","img23","img24"],["img6","img7","img8","img13","img14","img19","img20"],["img6","img11","img16","img17","img22","img18","img23","img24"],
+["img2","img3","img4","img5","img9","img10","img14","img15","img19","img24"],["img2","img3","img8","img13","img14","img15","img19","img20"],["img6","img7","img12","img17","img18","img19","img24"],["img2","img3","img4","img9","img14","img19","img20"],
+["img6","img11","img12","img13","img14","img15","img20"],["img6","img11","img16","img21","img22","img23","img24"],["img2","img3","img4","img5","img10","img15","img20"]
 ];
 
 let randNoOfPaths = Math.random()*11;
@@ -104,7 +96,7 @@ $(".box").on("click", function () {
       
     }
     
-    }, 500);
+    }, 50);
 
     } else {
     startOver();
@@ -171,13 +163,17 @@ function giveOptionsIdx() {
 }
 
 
-function lastStage(){
+async function  lastStage(){
   randFinalStageQues();
   let question = finalStageQues.ques[finalRandIdx].ques1;
   let answer = finalStageQues.ques[finalRandIdx].ans;
 
   
-  let userAns = prompt(question);
+  let  userAns = await swal({
+    
+    content: "input",
+    text : question,
+  });
 
   if(userAns == answer){
     $("h1").text("You Win! Reload To Restart");
@@ -221,6 +217,7 @@ function startOver() {
   clickedOption = "";
   idx = 0;
   set1.clear();
+  
 }
 
 
