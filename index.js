@@ -43,6 +43,7 @@ let clickedOption = "";
 let set1 = new Set();
 let randIdx=0;
 let finalRandIdx = 0;
+let removeCurrImg =[];
 
 
 
@@ -70,12 +71,12 @@ $("#img" + myCurrimg).html("<img src='images/swordsman.png'></img>");
 
 $(".box").on("click", function () {
   clickedOption = $(this).attr("id");
-  if (clickedOption === correctPaths[idx]) {
+  if (clickedOption === correctPaths[idx  ]) {
     $("#" + option1).html("");
     $("#" + option2).html("");
     $("#" + clickedOption).html("<img src='images/swordsman.png'></img>");
      
-    let removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
+    removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
     $("#" + removeCurrImg).html("");
    
 
@@ -97,9 +98,10 @@ $(".box").on("click", function () {
       if(logicArray[myCurrentPosition[0]][myCurrentPosition[1]] == finalStage1 || logicArray[myCurrentPosition[0]][myCurrentPosition[1]] == finalStage2){
         lastStage();
       }else{
-        randIdxGenerator();
+      randIdxGenerator();
       giveRiddle(randIdx);
       Options();
+      
     }
     
     }, 500);
@@ -113,7 +115,9 @@ function giveRiddle(randIdx) {
   var alt = questions.ques[randIdx].ques1;
   console.log(alt);
 
-  swal(alt);
+  swal({
+       title:alt, 
+    });
    
 }
 
@@ -177,7 +181,7 @@ function lastStage(){
 
   if(userAns == answer){
     $("h1").text("You Win! Reload To Restart");
-    let removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
+     removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
     $("#" + removeCurrImg).html("");
 
   }
@@ -190,9 +194,20 @@ function lastStage(){
 
 
 function startOver() {
-  $(".box").html("");
+
+ $("body").addClass("game-over");
+  setTimeout(function(){
+    $("body").removeClass("game-over");
+  },100);
+
+  $("#" + option1).html("");
+  $("#" + option2).html("");  
+  removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
+  $("#" + removeCurrImg).html("");
+
   $("#img" + myCurrimg).html("<img src='images/swordsman.png'></img>");
   $("h1").text("Game Over... Press Any Key to Restart!!");
+
   myCurrentPosition = [0, 0];
   myCurrimg = 1;
   gameStarted = false;
@@ -210,8 +225,9 @@ function startOver() {
 
 
 function randIdxGenerator(){
- randIdx = Math.random()*10;
+ randIdx = Math.random()*12;  
 randIdx = Math.floor(randIdx);
+
 if(set1.has(randIdx)){
   randIdxGenerator();
 }
@@ -219,7 +235,7 @@ else{
   set1.add(randIdx);
   return randIdx;
  }
-}
+ }
 
 
 const questions = {        
@@ -270,19 +286,34 @@ const questions = {
         wrong_ans: "Northern ",
       },
       {
-        ques1: "college name ____",
-        corr_ans: "dypcoe",
-        wrong_ans: "pccoe",
+        ques1: "What is Captain America's shield made of?",
+        corr_ans: "Vibranium",
+        wrong_ans: "Promethium",
       },
       {
-        ques1: "Year ____",
-        corr_ans: "3",
-        wrong_ans: "2",
+        ques1: "Total How Many Infinity Stones Are There ?",
+        corr_ans: "6",
+        wrong_ans: "5",
       },
       {
-        ques1: "expected Package ____",
-        corr_ans: "10 lpa",
-        wrong_ans: "12 lpa",
+        ques1: "In Which Of This Countries Are On Winning Side In World War 2 ?   ",
+        corr_ans: "China",
+        wrong_ans: "Italy",
+      },
+      {
+        ques1: " ",
+        corr_ans: "China",
+        wrong_ans: "Italy",
+      },
+      {
+        ques1: "In Which Of This Countries Are On Winning Side In World War 2 ?   ",
+        corr_ans: "China",
+        wrong_ans: "Italy",
+      },
+      {
+        ques1: "In Which Of This Countries Are On Winning Side In World War 2 ?   ",
+        corr_ans: "China",
+        wrong_ans: "Italy",
       },
   ],
 };
@@ -290,7 +321,7 @@ const questions = {
 
 
 function randFinalStageQues(){
-    finalRandIdx = Math.random()*4;
+    finalRandIdx = Math.random()*5;
     finalRandIdx = Math.floor(finalRandIdx);
     return finalRandIdx;
 }
@@ -312,6 +343,10 @@ const finalStageQues = {
       {
         ques1 : "my automic number is 8 . what am i?",
         ans : "oxygen"
+      },
+      {
+        ques1 : " I have lakes with no water, mountains with no stone and cities with no buildings. What am I?",
+        ans : "map"
       },
      
 

@@ -71,3 +71,28 @@ body{
       .box p{
         color: wheat;
       }
+      .game-over {
+        background-color: red;
+        opacity: 3;
+      }
+
+      .swal-modal{
+        background-color: #222629;
+        
+      }
+      .swal-title {
+        
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: whitesmoke;
+      }
+      .swal-button{
+        
+        background-color: #61892F;
+      }
+      /* .swal-overlay {
+        background-color: #222629;
+      } */
+      /* .swal-button:hover{
+        background: #79ab3c;
+      } */
