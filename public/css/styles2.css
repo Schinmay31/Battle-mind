@@ -1,0 +1,225 @@
+body{
+  background-color: #222629;
+  margin: 0;
+  padding: 0;
+}
+      .grid-container{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        position: relative;
+        height: 28.75rem;
+        width: 28.75rem;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         
+      }
+      
+      h1{
+        margin-top: 2 0px;
+        margin-bottom: unset;
+        font-size : 2.188rem;
+        text-align: center;
+        padding-bottom: 1.25rem;
+        color: whitesmoke;
+        font-weight: 900; 
+        
+      }
+      .button{
+        text-align: center;
+      }
+      .btn{
+        cursor: pointer;
+        background-color: #61892F;
+        color: whitesmoke;
+        border-radius: 0.625rem;
+        width: 6.688rem;
+        height: 1.875rem;
+        font-weight:800;
+        margin-bottom: 1.25rem;
+        font-size: 0.75rem;
+        margin-left: 1.25rem;
+      }
+      
+      .btn:hover{
+
+        color: #222629;
+      }
+        
+      img{
+         width: 16%;
+        position: absolute;
+      }
+      
+  
+      .box{
+        background-color: #61892F;
+        border: solid 0.063rem black;
+        line-height: 0px;
+        padding: 0.625rem;
+         overflow: hidden;
+        margin: 0.031rem;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        font-size: 0.9rem;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+     }
+
+      .box:hover{
+        background-color: #79ab3c;
+      }
+      .box p{
+        color: wheat;
+      }
+      
+
+      /* Home page css  */
+      .picture{
+        margin-top:7.7%;
+        height: 100px;
+        border: solid 2px black;
+        border-top-style: none ;
+      }
+     
+      #images{
+        height: 70px;
+        width: 70px ;
+        margin-left: 10px;
+        padding-top: 2.2%;
+      }
+      .left-side{
+        float: left;
+        width: 6%;
+        padding: 5px;
+      }
+      .left-side-close{
+        float: left;
+        width: 1.5%;
+        padding: 4px;
+        padding-left: 0px;
+      }
+      
+      html{
+        scroll-behavior: smooth;
+      }
+      .Mbtn-home{
+        position: relative;
+        height: 230px;
+        width: 230px;
+        margin: auto;
+        margin-top: 50px ;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      #h1-home{
+        background-color: #4d7023;
+        color: whitesmoke;
+        margin-top: 0;
+        padding: 30px;
+        font-size: 40px;
+        font-family: cursive;
+        text-shadow: 2px 2px #222629;
+        
+        
+      }
+      a{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      a:hover{
+        color: #222629;
+      }
+
+      .btn-home{
+        border: solid 3.5px black;
+        font-size: 20px;
+        height: 45px;
+        width: 160px;
+        font-family: cursive;
+        margin: 15px; 
+      } 
+     
+      .knight-img{
+        height: 100px;
+        width: 100px;
+        padding-top: 15px;
+        padding-left: 20px;
+        
+      }
+      .Rules{
+        text-align: center;
+        padding: 10px;
+        height: auto;
+        width: 1100px; 
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+       h4{
+        font-size: 35px;
+        color: whitesmoke;
+        font-family: cursive;
+       }
+       .rule-img img{
+        position: relative;
+        float: left;
+        height: 300px;
+        width: 350px;
+        
+       }
+       p{
+        color: whitesmoke;
+        font-family: cursive;
+        padding-left: 10px;
+        padding-right: 10px;
+       }
+
+      .rule-img{
+
+        border: solid 2px grey;
+        height: 310px;
+        width: auto;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      
+      #btn-start-rules{
+        
+      }
+
+      /* JS Page Css */
+      .game-over {
+        background-color: red;
+        opacity: 3;
+      }
+
+      .swal-modal{
+        background-color: #222629;
+        
+      }
+      .swal-title {
+        
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: whitesmoke;
+      }
+      .swal-button{
+        
+        background-color: #61892F;
+      }
+      .swal-text{
+        font-size: 20px;
+        color: whitesmoke;
+      }
+      /* .swal-overlay {
+        background-color: #222629;
+      } */
+        /* .swal-button:hover{
+         color: #79ab3c; 
+        background: #222629;
+      }   */
+      .correctPath{
+        background-color: #79ab3c;
+      } 
