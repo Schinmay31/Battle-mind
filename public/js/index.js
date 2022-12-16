@@ -44,13 +44,14 @@ let correctPathsOptions =[
   let randIdx=0;
   let finalRandIdx = 0;
   let removeCurrImg =[];
-  const myAudio = new Audio("public/Sounds/background.mp3");
+  let isUnMute = true;
+  const myAudio = new Audio("/public/Sounds/background.mp3");
   
   
   
   
   
-  $("#img" + myCurrimg).html("<img src='public/images/swordsman.png'></img>");
+  $("#img" + myCurrimg).html("<img src='/public/images/swordsman.png'></img>");
   
   
        $(document).on("keydown", function () {
@@ -70,6 +71,21 @@ let correctPathsOptions =[
       }
       
     })
+
+    $(".muteUnmute").on("click", function(){
+      if(isUnMute){
+        $(this).attr("src", "public/images/volume-mute.png");
+        myAudio.volume = 0;
+        isUnMute = false;
+      }
+      else{
+        $(this).attr("src", "public/images/volume-unmute.png");
+        myAudio.volume =  0.19;
+        isUnMute = true;
+      }
+
+      
+    })
   
   
   $(".box").on("click", function () {
@@ -77,7 +93,7 @@ let correctPathsOptions =[
     if (clickedOption === correctPaths[idx]) {
       $("#" + option1).html("");
       $("#" + option2).html("");
-      $("#" + clickedOption).html("<img src='public/images/swordsman.png'></img>");
+      $("#" + clickedOption).html("<img src='/public/images/swordsman.png'></img>");
        
       removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
       $("#" + removeCurrImg).html("");
@@ -195,7 +211,7 @@ let correctPathsOptions =[
        removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
       $("#" + removeCurrImg).html("");
       $("#" + logicArray[myCurrentPosition[0]][myCurrentPosition[1]]).addClass("correctPath");
-      $("#img25").html("<img src='public/images/winningCastle.jpg'></img>");
+      $("#img25").html("<img src='/public/images/winningCastle.jpg'></img>");
   
     }
     else{
@@ -215,7 +231,7 @@ let correctPathsOptions =[
     removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
     $("#" + removeCurrImg).html("");
   
-    $("#img" + myCurrimg).html("<img src='images/swordsman.png'></img>");
+    $("#img" + myCurrimg).html("<img src='/public/images/swordsman.png'></img>");
     $("h1").text("Game Over... Press Any Key to Restart!!");
   
     myCurrentPosition = [0, 0];
@@ -259,6 +275,7 @@ let correctPathsOptions =[
   
   
    $("#showRiddle").on("click",function(){
+    console.log("Show Riddle Clicked");
   
     if(gameStarted == true){
   
@@ -418,7 +435,7 @@ let correctPathsOptions =[
     setTimeout(function(){
     myAudio.pause();
     myAudio.load();
-    let looseaudio = new Audio("public/Sounds/wrong.mp3");
+    let looseaudio = new Audio("/public/Sounds/wrong.mp3");
     looseaudio.play();
       $("body").removeClass("game-over");
     },200);
@@ -427,15 +444,18 @@ let correctPathsOptions =[
   
   function rightAnswerSound(){
     
-    let rightAudio = new Audio("public/Sounds/Right.mp3");
-    myAudio.volume = 0.02;
+    let rightAudio = new Audio("/public/Sounds/Right.mp3");
     rightAudio.play();
-    myAudio.volume = 0.19;
   }
   
   function finalWinAudio(){
-    let winAudio = new Audio("public/Sounds/winning.mp3");
+    let winAudio = new Audio("/public/Sounds/winning.mp3");
     myAudio.pause();
     myAudio.load();
     winAudio.play();
   }
+  
+  
+  
+  
+  

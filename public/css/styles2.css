@@ -9,8 +9,8 @@ body {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   position: relative;
-  height: 28.75rem;
-  width: 28.75rem;
+  height: 35rem;    /*Change*/
+  width: 35rem;     /*Change*/
   margin: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -25,6 +25,20 @@ h1 {
   color: whitesmoke;
   font-weight: 900;
 
+}
+.volumeButton{
+  position: relative;
+ 
+}
+.muteUnmute{
+  height: 50px;
+  width: 50px;
+  filter: invert(90%);
+  right: 349px;
+  top: -63px;
+}
+.mute{
+  background-image: url(/public/images/volume-mute.png);
 }
 
 .button {
@@ -85,12 +99,15 @@ img {
   background-color: #4d7023;
   width: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 #h1-home {
   color: whitesmoke;
   margin-top: 0;
   padding: 1.85rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: cursive;
   text-shadow: 0.1rem 0.1rem #222629;
 }
@@ -98,7 +115,7 @@ img {
 .knight-img {
   height: 6.8rem;
   width: 6.8rem;
-  padding-top: 0.4rem;
+  padding-top: 1.1rem;
   padding-left: 0.8rem;
 
 }
@@ -108,20 +125,33 @@ img {
   height: 14.2rem;
   width: 20rem;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 6rem;                   /*change*/
   text-align: center;
-  /* margin-bottom: ; */
+
 }
 
 a {
   text-decoration: none;
   color: whitesmoke;
 }
+a:hover {
+  color: #222629;
+}
+
+.potrait{
+  width: 100%;
+  height: 8rem;
+  margin-top: 12.2rem;                          /*change*/
+
+}
 
 .picture {
-  display: block;
-  margin-top: 6.3rem;
-  width: 78.5rem;
+  position: relative;
+  float: left;
+  /* display: block; */
+  justify-content: center;
+  /* margin-top: 6.3rem; */
+  width: 100%;
   height: 6.2rem;
   border: solid 0.15rem black;
   border-top-style: none;
@@ -133,7 +163,7 @@ a {
 #images {
   height: 4.3rem;
   width: 4.2rem;
-  margin-left: 1rem;
+  margin-left: 2rem;        /*change*/
   padding-top: 1.70rem;
 }
 
@@ -150,19 +180,11 @@ a {
   /* padding-left: 0px; */
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-a:hover {
-  color: #222629;
-}
-
 .btn-home {
   border: solid 3.5px black;
   font-size: 1.2rem;
-  height: 2.8rem;
-  width: 10rem;
+  height: 3.2rem;          /*Change*/
+  width: 13rem;            /*Change*/
   font-family: cursive;
   margin: 1rem;
 }
@@ -171,7 +193,7 @@ a:hover {
   text-align: center;
   padding: 1rem;
   height: auto;
-  width: 70rem;
+  width: 80rem;        /*Change*/
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -198,6 +220,7 @@ p {
   padding-right: 1rem;
 }
 
+
 .rule-img {
 
   border: solid 2px grey;
@@ -220,14 +243,14 @@ p {
 }
 
 #img2-flying {
-  margin-left: 12rem;
+  margin-left: 19rem;   /*Change*/
 }
 
-.img3 {
+.img3{
   height: 4rem;
   width: 4rem;
   padding-top: 0.7rem;
-  margin-left: 3rem;
+  margin-left: 5rem;   /*Change*/
 }
 
 .img4 {
@@ -237,16 +260,17 @@ p {
 }
 
 #img4-zombie {
-  margin-left: 12rem;
+  margin-left: 15rem;   /*Change*/
 }
 
 #zombie-horse {
-  margin-left: 7rem;
+  margin-left: 9rem; /*Change*/
 }
 
 #zombie-hand {
-  margin-left: 1rem;
+  margin-left: 3rem; /*Change*/
 }
+
 
 .aboutUs {
 
@@ -256,8 +280,8 @@ p {
 .column {
   float: left;
   width: 33.3%;
-  margin: 100px;
-  padding: 0 8px;
+  margin: 10rem;    /*Change*/
+  padding: 0 0.5rem;   /*Change*/
 }
 
 .row {
@@ -267,11 +291,11 @@ p {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+  margin: 0.2rem;  /*Change*/
 }
 
 .container {
-  padding: 0 16px;
+  padding: 0 0.8rem;  /*Change*/
 }
 
 .container::after,
@@ -285,7 +309,7 @@ p {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 0.8rem;
   color: white;
   background-color: #61892F;
   text-align: center;
@@ -337,3 +361,54 @@ p {
 .correctPath {
   background-color: #79ab3c;
 }
+
+
+
+@media screen and (max-width: 1390px){
+.grid-container{
+  height: 28.75rem;    
+  width: 28.75rem;     
+}
+ #h1-home{
+  font-size: 2.5rem;
+ }
+ .knight-img{
+  padding-top: 0.4rem;
+ }
+.Mbtn-home{
+  margin-top: 3rem; 
+}
+.potrait{
+  margin-top: 6.4rem;  
+}
+#images{
+  margin-left: 1rem;
+}
+.btn-home{
+  height: 2.8rem;          
+  width: 10rem;  
+}
+.Rules{
+  width: 70rem;  
+}
+#img2-flying{
+  margin-left: 12rem;
+}
+.img3{
+  margin-left: 3rem; 
+}
+#img4-zombie{
+  margin-left: 12rem; 
+}
+#zombie-horse {
+  margin-left: 7rem; 
+}
+#zombie-hand {
+  margin-left: 1rem; 
+}
+
+
+}
+
+
+  
