@@ -56,6 +56,7 @@ let correctPathsOptions =[
   
        $(document).on("keydown", function () {
       if (!gameStarted) {
+       
         gameStarted = true;
         playSound();
       $("h1").text("Game Started!!");
@@ -207,6 +208,7 @@ let correctPathsOptions =[
     if(userAns == answer){
       
       finalWinAudio();
+      fire();
       $("h1").text("You Win! Reload To Restart");
        removeCurrImg = logicArray[myCurrentPosition[0]][myCurrentPosition[1]];
       $("#" + removeCurrImg).html("");
@@ -454,8 +456,10 @@ let correctPathsOptions =[
     myAudio.load();
     winAudio.play();
   }
-  
-  
-  
-  
-  
+
+  function fire(){
+    $("#fire").addClass("fireworksDiv");
+    const fireDiv = document.querySelector('.fireworksDiv');
+    const fireworks = new Fireworks(fireDiv,{});
+    fireworks.start();
+  }

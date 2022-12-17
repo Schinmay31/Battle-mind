@@ -9,8 +9,8 @@ body {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   position: relative;
-  height: 35rem;    /*Change*/
-  width: 35rem;     /*Change*/
+  height: 35rem;    
+  width: 35rem;     
   margin: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -25,20 +25,6 @@ h1 {
   color: whitesmoke;
   font-weight: 900;
 
-}
-.volumeButton{
-  position: relative;
- 
-}
-.muteUnmute{
-  height: 50px;
-  width: 50px;
-  filter: invert(90%);
-  right: 349px;
-  top: -63px;
-}
-.mute{
-  background-image: url(/public/images/volume-mute.png);
 }
 
 .button {
@@ -92,6 +78,22 @@ img {
 .box p {
   color: wheat;
 }
+.volumeButton{
+  position: relative;
+ 
+}
+.muteUnmute{
+  height: 50px;
+  width: 50px;
+  filter: invert(90%);
+  right: 349px;
+  top: -63px;
+}
+.mute{
+  background-image: url(/public/images/volume-mute.png);
+}
+
+
 
 
 /* Home page css  */
@@ -125,9 +127,9 @@ html {
   height: 14.2rem;
   width: 20rem;
   margin: auto;
-  margin-top: 6rem;                   /*change*/
+  margin-top: 6rem;                   
   text-align: center;
-
+  /* margin-bottom: ; */
 }
 
 a {
@@ -141,7 +143,7 @@ a:hover {
 .potrait{
   width: 100%;
   height: 8rem;
-  margin-top: 12.2rem;                          /*change*/
+  margin-top: 11.2rem;                       
 
 }
 
@@ -152,7 +154,7 @@ a:hover {
   justify-content: center;
   /* margin-top: 6.3rem; */
   width: 100%;
-  height: 6.2rem;
+  height: 7.2rem;            
   border: solid 0.15rem black;
   border-top-style: none;
   border-left-style: none;
@@ -161,9 +163,9 @@ a:hover {
 }
 
 #images {
-  height: 4.3rem;
-  width: 4.2rem;
-  margin-left: 2rem;        /*change*/
+  height: 5.3rem;        
+  width: 5.2rem;        
+  margin-left: 2rem;        
   padding-top: 1.70rem;
 }
 
@@ -183,8 +185,8 @@ a:hover {
 .btn-home {
   border: solid 3.5px black;
   font-size: 1.2rem;
-  height: 3.2rem;          /*Change*/
-  width: 13rem;            /*Change*/
+  height: 3.2rem;          
+  width: 13rem;            
   font-family: cursive;
   margin: 1rem;
 }
@@ -193,7 +195,7 @@ a:hover {
   text-align: center;
   padding: 1rem;
   height: auto;
-  width: 80rem;        /*Change*/
+  width: 80rem;        
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -231,44 +233,44 @@ p {
 }
 
 .img1 {
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;         
+  width: 6rem;          
   padding-top: 1rem;
 }
 
 .img2 {
-  height: 3rem;
-  width: 3rem;
+  height: 3.5rem;         
+  width: 3.5rem;          
   padding-top: 0.3rem;
 }
 
 #img2-flying {
-  margin-left: 19rem;   /*Change*/
+  margin-left: 19rem;   
 }
 
 .img3{
-  height: 4rem;
-  width: 4rem;
-  padding-top: 0.7rem;
-  margin-left: 5rem;   /*Change*/
+  height: 5rem;         
+  width: 5rem;            
+  padding-top: 0.7rem;        
+  margin-left: 5rem;   
 }
 
 .img4 {
   height: 1.8rem;
   width: 2rem;
-  padding-top: 4.3rem;
+  padding-top: 5.3rem;    
 }
 
 #img4-zombie {
-  margin-left: 15rem;   /*Change*/
+  margin-left: 15rem;   
 }
 
 #zombie-horse {
-  margin-left: 9rem; /*Change*/
+  margin-left: 9rem; 
 }
 
 #zombie-hand {
-  margin-left: 3rem; /*Change*/
+  margin-left: 4rem; 
 }
 
 
@@ -280,8 +282,8 @@ p {
 .column {
   float: left;
   width: 33.3%;
-  margin: 10rem;    /*Change*/
-  padding: 0 0.5rem;   /*Change*/
+  margin: 10rem;    
+  padding: 0 0.5rem;   
 }
 
 .row {
@@ -291,11 +293,11 @@ p {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0.2rem;  /*Change*/
+  margin: 0.2rem;  
 }
 
 .container {
-  padding: 0 0.8rem;  /*Change*/
+  padding: 0 0.8rem;  
 }
 
 .container::after,
@@ -362,6 +364,17 @@ p {
   background-color: #79ab3c;
 }
 
+.fireworksDiv{
+  position: absolute;
+  
+  height: 500px;
+  width: 100%;
+  
+  top: 25%;
+  
+}
+
+
 
 
 @media screen and (max-width: 1390px){
@@ -369,20 +382,20 @@ p {
   height: 28.75rem;    
   width: 28.75rem;     
 }
- #h1-home{
-  font-size: 2.5rem;
- }
- .knight-img{
-  padding-top: 0.4rem;
- }
 .Mbtn-home{
   margin-top: 3rem; 
 }
+.picture{
+  height: 6.2rem; 
+}
 .potrait{
-  margin-top: 6.4rem;  
+  margin-top: 5.8rem;  
 }
 #images{
   margin-left: 1rem;
+  height: 4.3rem;        
+  width: 4.2rem;        
+
 }
 .btn-home{
   height: 2.8rem;          
@@ -396,6 +409,15 @@ p {
 }
 .img3{
   margin-left: 3rem; 
+  height: 4rem;         
+  width: 4rem;  
+}
+.img2 {
+  height: 3rem;         
+  width: 3rem;
+}
+.img4{
+  padding-top:4.3rem;
 }
 #img4-zombie{
   margin-left: 12rem; 
@@ -406,9 +428,15 @@ p {
 #zombie-hand {
   margin-left: 1rem; 
 }
-
+.img1 {
+  height: 5rem;         
+  width: 5rem;          
+  padding-top: 1rem;
+}
+.column{
+  margin: 5rem;
+  padding: 0 0.2rem;
+}
 
 }
 
-
-  
