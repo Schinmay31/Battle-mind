@@ -1,24 +1,24 @@
 {
-  "name": "puzzlegame",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sharvdalal/PuzzleGame.git"
-  },
-  "author": "chinmay / sharv",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sharvdalal/PuzzleGame/issues"
-  },
-  "homepage": "https://github.com/sharvdalal/PuzzleGame#readme",
-  "dependencies": {
-    "body-parser": "^1.20.1",
-    "ejs": "^3.1.8",
-    "express": "^4.18.2"
+    "name": "puzzlegame",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sharvdalal/PuzzleGame.git"
+    },
+    "author": "chinmay / sharv",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/sharvdalal/PuzzleGame/issues"
+    },
+    "homepage": "https://github.com/sharvdalal/PuzzleGame#readme",
+    "dependencies": {
+      "body-parser": "^1.20.1",
+      "ejs": "^3.1.8",
+      "express": "^4.18.2"
+    }
   }
-}

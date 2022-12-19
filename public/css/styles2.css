@@ -83,11 +83,11 @@ img {
  
 }
 .muteUnmute{
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   filter: invert(90%);
-  right: 349px;
-  top: -63px;
+  right: 49px;
+  top: -93px;
 }
 .mute{
   background-image: url(/public/images/volume-mute.png);
