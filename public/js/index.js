@@ -442,6 +442,7 @@ function randFinalStageQues() {
   return finalRandIdx;
 }
 
+
 const finalStageQues = {             //10 ques 
   ques: [
     {
@@ -540,3 +541,4 @@ function fire() {
   const fireworks = new Fireworks(fireDiv, {});
   fireworks.start();
 }
+

@@ -206,6 +206,10 @@ h4 {
   color: whitesmoke;
   font-family: cursive;
 }
+.aboutUs p{
+  word-spacing: 0.3rem;
+  padding: 20px;
+}
 
 .rule-img img {
   position: relative;
@@ -459,7 +463,19 @@ padding-bottom: 1rem;
 
 @media only screen and (min-width:400px) and (max-width: 600px){  /*for mobile phones*/
   
-  .grid-container{
+.picture{
+  
+  
+   float: left;
+  
+}
+.left-side{
+  padding-left: 0;
+  margin-left: 0;
+}
+
+
+   .grid-container{
 
    height: 28.75rem;    
    width: 28.75rem;     
@@ -471,61 +487,6 @@ padding-bottom: 1rem;
   right: 20px;
   top: -63px;
 }
- /*
- .Mbtn-home{
-   margin-top: 3rem; 
- }
- .picture{
-   height: 6.2rem; 
- }
- .potrait{
-   margin-top: 5.8rem;  
- }
- #images{
-   margin-left: 1rem;
-   height: 4.3rem;        
-   width: 4.2rem;        
  
- }
- .btn-home{
-   height: 2.8rem;          
-   width: 10rem;  
- }
- .Rules{
-   width: 70rem;  
- }
- #img2-flying{
-   margin-left: 12rem;
- }
- .img3{
-   margin-left: 3rem; 
-   height: 4rem;         
-   width: 4rem;  
- }
- .img2 {
-   height: 3rem;         
-   width: 3rem;
- }
- .img4{
-   padding-top:4.3rem;
- }
- #img4-zombie{
-   margin-left: 12rem; 
- }
- #zombie-horse {
-   margin-left: 7rem; 
- }
- #zombie-hand {
-   margin-left: 1rem; 
- }
- .img1 {
-   height: 5rem;         
-   width: 5rem;          
-   padding-top: 1rem;
- }
- .column{
-   margin: 5rem;
-   padding: 0 0.2rem;
- }
- */
+ 
  }  
