@@ -461,7 +461,7 @@ padding-bottom: 1rem;
 
 }  
 
-@media only screen and (min-width:400px) and (max-width: 600px){  /*for mobile phones*/
+/* @media only screen and (min-width:400px) and (max-width: 600px){  for mobile phones
   
 .picture{
   
@@ -489,4 +489,4 @@ padding-bottom: 1rem;
 }
  
  
- }  
+ }   */
