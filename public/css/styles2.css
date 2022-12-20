@@ -228,7 +228,7 @@ a:hover {
   font-size: 1.2rem;
   height: 3.2rem;          
   width: 13rem;            
-  font-family: cursive;
+  font-weight: 900;
   margin: 1rem;
 }
 
@@ -245,7 +245,7 @@ a:hover {
 h4 {
   font-size: 2.5rem;
   color: whitesmoke;
-  font-family: cursive;
+  font-weight: 900;
 }
 .aboutUs p{
   word-spacing: 0.3rem;
@@ -567,7 +567,8 @@ display: none;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  margin-left: 0.6rem;
+  margin-left: 1.6rem;
+  margin-right: 0rem;
   
 }
 
@@ -612,7 +613,7 @@ margin-left: 0rem;
    
   height: 20rem;    
   width: 20rem;   
-  margin-left: 0.9rem;  
+  margin-left: 1.5rem;  
 }
 
 .box {
