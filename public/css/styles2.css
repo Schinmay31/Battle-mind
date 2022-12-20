@@ -448,6 +448,9 @@ padding-bottom: 1rem;
   height: 28.75rem;    
   width: 28.75rem;     
 }
+.knight-img{
+  padding-top: 0.4rem;
+}
 .Mbtn-home{
   margin-top: 3rem; 
 }
@@ -515,7 +518,7 @@ padding-bottom: 1rem;
 .knight-img {
   height: 5rem;
   width: 5rem;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   padding-left: 0;
 
 }
@@ -564,7 +567,7 @@ display: none;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  padding-left: 2rem;
+  margin-left: 0.6rem;
   
 }
 
@@ -598,7 +601,7 @@ margin-left: 0rem;
 .container{
   justify-content: center;
   display: block;
-  width: 18rem;
+  width: 17rem;
 }
 .all-connect{
   margin-left: -2rem;
@@ -609,7 +612,7 @@ margin-left: 0rem;
    
   height: 20rem;    
   width: 20rem;   
-  margin: auto;  
+  margin-left: 0.9rem;  
 }
 
 .box {
