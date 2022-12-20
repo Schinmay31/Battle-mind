@@ -504,7 +504,7 @@ padding-bottom: 1rem;
 
 }  
 
- @media only screen and (min-width:400px) and (max-width: 600px){  /* for mobile phones
+ @media only screen and (min-width:300px) and (max-width: 600px){  /* for mobile phones
 */ 
 /* .heading{
   width: 100%;
@@ -585,7 +585,7 @@ margin-left: 1.2rem;
 }
 .card{
   float: left;
-  width: 24.5rem;
+  width: 24.5 rem;
 }
 .container{
   justify-content: center;
