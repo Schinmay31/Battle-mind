@@ -50,6 +50,22 @@ h1 {
    align-items: center;
  
  }
+ .startButton{
+  /* visibility: hidden; */
+
+  margin:-83px 0;
+  cursor: pointer;
+  background-color: #61892F;
+  color: whitesmoke;
+  border-radius: 0.625rem;
+  width: 9.688rem;
+  height: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  font-size: 0.90rem;
+  margin-left: 1.25rem;
+
+}
 
 .button {
   text-align: center;
@@ -488,9 +504,15 @@ padding-bottom: 1rem;
 
 }  
 
- @media only screen and (min-width:400px) and (max-width: 600px){  for mobile phones
-  
- 
+ @media only screen and (min-width:400px) and (max-width: 600px){  /* for mobile phones
+*/ 
+/* .heading{
+  width: 100%;
+} 
+.heading h1{
+  width: 100%;
+} */
+
 .Mbtn-home {
   height: 10rem;
   width: 15rem;
@@ -536,7 +558,7 @@ display: none;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  padding-left: 4rem;
+  padding-left: 3rem;
   
 }
 
@@ -557,22 +579,36 @@ margin-left: 1.2rem;
 }
 .column {
   display: inline-block;
-  width: 70%;
+  width: 60%;
   margin:0rem;    
   padding-bottom: 2rem;   
 }
 .card{
   float: left;
-  width: 25rem;
+  width: 24.5rem;
 }
 .container{
   justify-content: center;
   display: block;
   width: 25rem;
 }
-.aboutUs p{
-  
+
+
+ .grid-container{
+margin-left :5rem;
+  height: 20rem;    
+  width: 20rem;     
 }
- 
+
+.box {
+ font-size: 0.5rem;
+}
+.muteUnmute{
+ height: 30px;
+ width: 30px;
+ filter: invert(90%);
+ right: 20px;
+ top: -63px;
+} 
  
  }   
