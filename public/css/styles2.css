@@ -506,13 +506,17 @@ padding-bottom: 1rem;
 
  @media only screen and (min-width:300px) and (max-width: 600px){  /* for mobile phones
 */ 
-/* .heading{
-  width: 100%;
-} 
-.heading h1{
-  width: 100%;
-} */
 
+.heading h1{
+  font-size: 2rem;
+} 
+.knight-img {
+  height: 5rem;
+  width: 5rem;
+  padding-top: 1.5rem;
+  padding-left: 0;
+
+}
 .Mbtn-home {
   height: 10rem;
   width: 15rem;
@@ -552,26 +556,28 @@ display: none;
 }
 .Rules {
   
-  width: 21.5rem;
+  width: 20rem;
   display: inline-block;   
   justify-content: center;      
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  padding-left: 3rem;
+  padding-left: 1rem;
   
 }
 
 .rule-img {
 
-  height: 38rem;
+  height: 35rem;
    justify-content: center;
-  width: 25rem;
+  width: 18rem;
   margin-top: 1rem;
   cursor: pointer;
 }
 .rule-img img{
-margin-left: 1.2rem;
+  height: 15rem;
+  width: 18rem;
+margin-left: 0rem;
 }
 .row{
   justify-content: center;
@@ -585,30 +591,34 @@ margin-left: 1.2rem;
 }
 .card{
   float: left;
-  width: 24.5 rem;
+  width: 20 rem;
 }
 .container{
   justify-content: center;
   display: block;
-  width: 25rem;
+  width: 18rem;
 }
+.all-connect{
+  margin-left: -2rem;
+ }
 
 
  .grid-container{
-margin-left :5rem;
+   
   height: 20rem;    
-  width: 20rem;     
+  width: 20rem;   
+  margin-left: 0.7rem;  
 }
 
 .box {
  font-size: 0.5rem;
 }
 .muteUnmute{
- height: 30px;
- width: 30px;
+ height: 20px;
+ width: 20px;
  filter: invert(90%);
- right: 20px;
- top: -63px;
+ right: 10px;
+ top: -11rem;
 } 
- 
+
  }   
