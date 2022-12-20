@@ -150,7 +150,8 @@ html{
   margin-top: 0;
   padding: 1.85rem;
   font-size: 3rem;
-  font-family: cursive;
+
+  font-weight: 900;
   text-shadow: 0.1rem 0.1rem #222629;
 }
 
@@ -261,7 +262,8 @@ h4 {
 
 p {
   color: whitesmoke;
-  font-family: cursive;
+  
+  font-weight: 900;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -562,7 +564,7 @@ display: none;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   
 }
 
@@ -607,7 +609,7 @@ margin-left: 0rem;
    
   height: 20rem;    
   width: 20rem;   
-  margin-left: 0.7rem;  
+  margin: auto;  
 }
 
 .box {
